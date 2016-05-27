@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>Giftr</title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaTgwDi92_SY8Z9xW2ox5WoXfUlpD9dgo">
+	</script>
+</head>
+
+<body>
+
+
+	<div class="header-bar">
+
+		<h1>GIFTR</h1>
+	</div>
+
+
+	<!-- Register Page -->
+
+	<section data-href="profile" data-role="page" id="register">
+
+		<!-- Add spacing and some text-->
+
+		<p>Since it is your first time using the time you need to register</p>
+
+		<br>
+		<br>
+		<label>Email</label>
+
+		<input type="text" placeholder="Enter E-mail" id="email" />
+		<button class="rbutton" id="btnregister">Register</button>
+	</section>
+
+
+	<!-- List of People -->
+
+
+	<!--
+	<section data-href="test" data-role="page2" id="lpeople" class="hide">
+
+
+	<input type="text" placeholder="Enter E-mail" />
+	<button class="rbutton" id="btnregister1">Register</button>
+</section>
+-->
+
+
+	<!-- List of people -->
+
+	<section data-role="page" id="listofpeople" class="hide">
+		<ul id="peoplelist"></ul>
+		<button id="addpeople">ADD</button>
+
+	</section>
+
+
+	<!-- Add Person -->
+
+	<section data-role="page" id="addperson" class="hide">
+		<label>Enter the name of person:</label>
+		<input type="text" id="txtname" />
+		<button id="btnsave">Save</button>
+	</section>
+
+
+	<!-- List of Gifts -->
+
+	<section data-role="page" id="listofgifts" class="hide">
+		<p>Gifts</p>
+		<ul id="giftlist"></ul>
+		<button id="btnaddgifts">Add</button>
+	</section>
+
+
+	<!-- Add Gifts-->
+
+	<section data-role="page" id="addgifts" class="hide">
+		<label>Enter gift name:</label>
+		<input type="text" id="txtgiftname" />
+		<button id="btngeolocation">Add Location</button>
+		<div style="height:100%; width:100%;">
+			<div id="map_canvas"></div>
+		</div>
+	</section>
+
+
+	<!-- Edit Gifts-->
+	<section data-role="page" id="editgifts" class="hide">
+		<label>Gift name:</label>
+		<input type="text" id="txtgiftdisplay" />
+		<button id="btndelete">Delete</button>
+		<button id="btnedit">Edit</button>
+		<div style="height:100%; width:100%;">
+			<div id="map_canvas"></div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="cordova.js"></script>
+
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
